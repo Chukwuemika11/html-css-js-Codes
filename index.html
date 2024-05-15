@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+        #container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Hello, World!</h1>
+        <button id="clickButton">Click Me</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const button = document.getElementById("clickButton");
+            const output = document.getElementById("output");
+
+            button.addEventListener("click", function() {
+                output.textContent = "Button clicked!";
+            });
+        });
+    </script>
+</body>
+</html>
